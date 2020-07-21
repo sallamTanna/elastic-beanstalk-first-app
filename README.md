@@ -61,7 +61,7 @@ files:
 **Note: you need to change 9000 and put your server port**
 
 15. Add, commit, push, and deploy your app again, then navigate to the website again and refresh to see the magic
-16. Surprise again :stuck_out_tongue_winking_eye: Blank page! Why? This is because we need to tell the eb from where he can get the static files. Now after deploying, static files are not in client>build folder. They have a new path. We need to add a new config file to tell the eb about the new path which is `/var/app/current/client/build/static;`
+16. Surprise again :stuck_out_tongue_winking_eye: react files are not served! Why? This is because we need to tell the eb from where he can get the static files. Now after deploying, static files are not in client>build folder. They have a new path. We need to add a new config file to tell the eb about the new path which is `/var/app/current/client/build/static;`
     - Under `.ebextensions` folder, create new file and name it `staticfiles.config`.
     - Add the following code in this file
 
