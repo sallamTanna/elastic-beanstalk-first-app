@@ -1,4 +1,4 @@
-# elastic-beanstalk-test
+# elastic-beanstalk-first-app
 
 #### Simple Node.js+React app that I use elastic-beanstalk service from AWS for deploying.
 
