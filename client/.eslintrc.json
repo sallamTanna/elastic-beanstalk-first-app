@@ -1,0 +1,41 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "plugins": ["prettier"],
+  "rules": {
+    "camelcase": 0,
+    "react/prefer-stateless-function": 0,
+    "no-nested-ternary": 0,
+    "react/state-in-constructor": 0,
+    "import/no-named-as-default-member": 0,
+    "import/no-named-as-default": 0,
+    "react/prop-types": 0,
+    "import/prefer-default-export": 0,
+    "consistent-return": 0,
+    // disables the windows/unix linebreak checks.
+    "linebreak-style": [0, "error", "windows"],
+    //  allow .js extensions for JSX.
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "quotes": [
+      2,
+      "double",
+      {
+        "avoidEscape": true, // allows strings to use single-quotes or double-quotes so long as the string contains a quote that would have to be escaped otherwise
+        "allowTemplateLiterals": true // allows strings to use backticks
+      }
+    ],
+    // configure the prettier plugin
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "es5",
+        "singleQuote": false
+      }
+    ]
+  }
+}
